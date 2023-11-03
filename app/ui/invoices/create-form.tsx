@@ -11,6 +11,11 @@ import {
 import { Button } from "../button";
 import { createInvoice } from "@/app/lib/action";
 import { useFormState } from "react-dom";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Create Invoice  ",
+};
 
 export default function Form({ customers }: { customers: CustomerField[] }) {
   const initialState = {
